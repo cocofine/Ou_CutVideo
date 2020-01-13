@@ -1,0 +1,6 @@
+framework module Ou_CutVideo {
+  umbrella header "Ou_CutVideo-umbrella.h"
+
+  export *
+  module * { export * }
+}

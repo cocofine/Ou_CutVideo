@@ -1,0 +1,6 @@
+framework module Ou_CutPhoto {
+  umbrella header "Ou_CutPhoto-umbrella.h"
+
+  export *
+  module * { export * }
+}

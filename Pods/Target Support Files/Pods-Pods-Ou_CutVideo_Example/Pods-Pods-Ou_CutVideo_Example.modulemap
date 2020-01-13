@@ -1,0 +1,6 @@
+framework module Pods_Pods_Ou_CutVideo_Example {
+  umbrella header "Pods-Pods-Ou_CutVideo_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -8,6 +8,6 @@ target 'Ou_CutVideo_Example' do
   target 'Ou_CutVideo_Tests' do
     inherit! :search_paths
 
-    pod 'FBSnapshotTestCase'
+    
   end
 end

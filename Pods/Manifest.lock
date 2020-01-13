@@ -1,0 +1,16 @@
+PODS:
+  - Ou_CutPhoto (0.1.0)
+
+DEPENDENCIES:
+  - Ou_CutPhoto
+
+SPEC REPOS:
+  trunk:
+    - Ou_CutPhoto
+
+SPEC CHECKSUMS:
+  Ou_CutPhoto: fef2103b946bee5afd77f1da8acda13b05f96df1
+
+PODFILE CHECKSUM: 36e456298facb372e0f3c7486afd3b3b9c97f140
+
+COCOAPODS: 1.8.4

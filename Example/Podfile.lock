@@ -1,0 +1,16 @@
+PODS:
+  - Ou_CutVideo (0.1.0)
+
+DEPENDENCIES:
+  - Ou_CutVideo (from `../`)
+
+EXTERNAL SOURCES:
+  Ou_CutVideo:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Ou_CutVideo: 7284cf8cdc5ffd7ff76d6391193a9a37d8f40740
+
+PODFILE CHECKSUM: dbd7770c7e00efc252a3d67c0cc2bcb28828a694
+
+COCOAPODS: 1.8.4

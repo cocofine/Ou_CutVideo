@@ -1,0 +1,6 @@
+framework module Pods_Ou_CutVideo_Tests {
+  umbrella header "Pods-Ou_CutVideo_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
