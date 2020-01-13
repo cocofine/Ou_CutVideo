@@ -48,7 +48,7 @@ typedef void(^VideoCompressBlock)(AVAssetExportSessionStatus status);
 {
 
       NSBundle *bundle = [NSBundle bundleForClass:[CutVideoViewController class]];
-      NSString *path = [bundle pathForResource:@"Ou_CutVideo" ofType:@"bundle"];
+      NSString *path = [bundle pathForResource:@"CutResource" ofType:@"bundle"];
       NSBundle *b = [NSBundle bundleWithPath:path];
     
     if (self = [super initWithNibName:@"CutVideoViewController" bundle:b]) {

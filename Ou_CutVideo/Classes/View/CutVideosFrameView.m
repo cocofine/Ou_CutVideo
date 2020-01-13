@@ -64,7 +64,7 @@
     if (self = [super initWithCoder:aDecoder]) {
         
         NSBundle *bundle = [NSBundle bundleForClass:[CutVideosFrameView class]];
-        NSString *path = [bundle pathForResource:@"Ou_CutVideo" ofType:@"bundle"];
+        NSString *path = [bundle pathForResource:@"CutResource" ofType:@"bundle"];
         NSBundle *b = [NSBundle bundleWithPath:path];
         
         UIView *view = [[b loadNibNamed:@"CutVideosFrameView" owner:self options:nil] firstObject];
@@ -83,7 +83,7 @@
         
       
         NSBundle *bundle = [NSBundle bundleForClass:[CutVideosFrameView class]];
-        NSString *path = [bundle pathForResource:@"Ou_CutVideo" ofType:@"bundle"];
+        NSString *path = [bundle pathForResource:@"CutResource" ofType:@"bundle"];
         NSBundle *b = [NSBundle bundleWithPath:path];
         
         UIView *view = [[b loadNibNamed:@"CutVideosFrameView" owner:self options:nil] firstObject];
@@ -100,7 +100,7 @@
 -(void)setInitData
 {
     NSBundle *bundle = [NSBundle bundleForClass:[CutVideosFrameView class]];
-    NSString *path = [bundle pathForResource:@"Ou_CutVideo" ofType:@"bundle"];
+    NSString *path = [bundle pathForResource:@"CutResource" ofType:@"bundle"];
     NSBundle *b = [NSBundle bundleWithPath:path];
     
     //渐变色
@@ -179,7 +179,7 @@
                     else
                     {
                         NSBundle *bundle = [NSBundle bundleForClass:[CutVideosFrameView class]];
-                        NSString *path = [bundle pathForResource:@"Ou_CutVideo" ofType:@"bundle"];
+                        NSString *path = [bundle pathForResource:@"CutResource" ofType:@"bundle"];
                         NSBundle *b = [NSBundle bundleWithPath:path];
                         [self.dataArray addObject:[UIImage imageWithContentsOfFile:[b pathForResource:@"select_image_blur@3x" ofType:@"png"]]];
                         

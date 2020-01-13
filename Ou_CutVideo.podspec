@@ -32,9 +32,10 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'Ou_CutVideo/Classes/**/*'
   
-   s.resource_bundles = {
-     'Ou_CutVideo' => ['Ou_CutVideo/Assets/*.png']
-   }
+  s.resource = 'Ou_CutVideo/CutResource.bundle'
+#   s.resource_bundles = {
+#     'CutResource' => ['Ou_CutVideo/Assets/*.png']
+#   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

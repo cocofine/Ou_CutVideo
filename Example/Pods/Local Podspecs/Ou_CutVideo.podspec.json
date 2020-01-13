@@ -19,9 +19,5 @@
     "ios": "8.0"
   },
   "source_files": "Ou_CutVideo/Classes/**/*",
-  "resource_bundles": {
-    "Ou_CutVideo": [
-      "Ou_CutVideo/Assets/*.png"
-    ]
-  }
+  "resources": "Ou_CutVideo/CutResource.bundle"
 }

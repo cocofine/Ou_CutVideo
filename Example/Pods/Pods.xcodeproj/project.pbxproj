@@ -7,58 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00A9B7BB772995F3FBA78237BCE90927 /* CutVideosFrameView.h in Headers */ = {isa = PBXBuildFile; fileRef = ABAF386B23B405A8B2C756E22D0E7C97 /* CutVideosFrameView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		012830F6DC43FC6475AED95007032CF7 /* Pods-Ou_CutVideo_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F87DBD94001C6454C1B3151FED3567A5 /* Pods-Ou_CutVideo_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		07D0060617A0424B6AF7D41B6D4075CC /* Ou_CutVideo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2055F1C65264B82AFFD601289DD1C11B /* Ou_CutVideo-dummy.m */; };
-		1A27FDC103DCF52948A400E04D07C0F3 /* CutVideosFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 911EE7FA544A7087EA393FB90502B9FC /* CutVideosFrameView.m */; };
+		08586640AFFDF220694ED53D2B46D248 /* NSObject+LoadView.h in Headers */ = {isa = PBXBuildFile; fileRef = A3EE241804EB979D2E6406C394C297E8 /* NSObject+LoadView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08C8AFED88B754906E9D5D4F9F8C46B2 /* TJPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3359D24688C772687F4CAE8E514DC7 /* TJPhotoManager.m */; };
+		12C3676AAC6A1057015250385202563F /* CutVideosFrameView.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3D7E6F8FA15C2A753C80178406BB1C /* CutVideosFrameView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BB6B72167635224AC9588AF1D7041EF /* TJMediaManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E1B10104F06B510BB40F25D09065DEFF /* TJMediaManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1FD91272095A917C7875D8206E2BD44A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		2450C2386C642DF5FE356304210F1178 /* SDAVAssetExportSession.h in Headers */ = {isa = PBXBuildFile; fileRef = C38A73573638A248FF8BFEBAA4138995 /* SDAVAssetExportSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		26828253EB5E5A74CDBBF52AA20D1FCF /* TJMediaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3273F312A26BEFE5E94286150C6CC53E /* TJMediaManager.m */; };
 		2917B4D03E9D3E29EF6C1A6A280F159A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		2A4A87AECDA669321B6CEB2DCB7B5751 /* UIView+ClickEdgeInsets.h in Headers */ = {isa = PBXBuildFile; fileRef = 268E0AF51419DD77C311A6B91F12FE76 /* UIView+ClickEdgeInsets.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2CCED31BAAD3E3EE5AFF3A1F671B51E7 /* Pods-Ou_CutVideo_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA124214F35CB869B85FFFDA8220C6D /* Pods-Ou_CutVideo_Tests-dummy.m */; };
-		2D1DBFB2FD79807C28F6B7A40756D3C3 /* LoadingView.h in Headers */ = {isa = PBXBuildFile; fileRef = DAB1B7844CEF46DDAEB23A1C99A062DC /* LoadingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3AE410AA3CB72DCB0E19127CBA7E2B2E /* icon_video_bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DA9420242721425C26160EF40A869B /* icon_video_bar@2x.png */; };
-		49564D61924349B8947136278A54DA70 /* Ou_CutVideo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 73BB7A57CE3C4C0B72686BDC1227F2B0 /* Ou_CutVideo.bundle */; };
-		4E159CB4D1BE755F840EF13F5A841742 /* UIView+ClickEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = F54162D8FE7411FC23BE4F270E01158D /* UIView+ClickEdgeInsets.m */; };
-		51DDCB0F09BB5CE7DD423BB3D1A40AEB /* CutVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD77E882258E9B7B5B140BE13EF1B952 /* CutVideoViewController.m */; };
-		5595891EEE86BFA7AD7CAEC080A6F129 /* TJPhotoManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2844A7CA8DD8FA482A7BB87A403D170C /* TJPhotoManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62D30ADE1C716CDF23732BC6F669FC08 /* CutVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D098BCABECDC536089EE237D3355F2C /* CutVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56C3E1B4C2C9A31B312C9ACE8D4D248B /* TJMediaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE944192ED0CBAE48C1DF5EF98F940F6 /* TJMediaManager.m */; };
+		5A982E4ED17C71E112D9F8AE397BA4F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		65685D4C9489E464AA58B7C3E5119468 /* Pods-Ou_CutVideo_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C1B05C085D1F8921BB696EF90BC855 /* Pods-Ou_CutVideo_Example-dummy.m */; };
-		74B1B19423CC51F600E2EA62 /* CutVideoViewController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 74B1B19123CC51F600E2EA62 /* CutVideoViewController.nib */; };
-		74B1B19523CC51F600E2EA62 /* CutVideoViewController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 74B1B19123CC51F600E2EA62 /* CutVideoViewController.nib */; };
-		74B1B19623CC51F600E2EA62 /* CutViewCell.nib in Resources */ = {isa = PBXBuildFile; fileRef = 74B1B19223CC51F600E2EA62 /* CutViewCell.nib */; };
-		74B1B19723CC51F600E2EA62 /* CutViewCell.nib in Resources */ = {isa = PBXBuildFile; fileRef = 74B1B19223CC51F600E2EA62 /* CutViewCell.nib */; };
-		74B1B19823CC51F600E2EA62 /* CutVideosFrameView.nib in Resources */ = {isa = PBXBuildFile; fileRef = 74B1B19323CC51F600E2EA62 /* CutVideosFrameView.nib */; };
-		74B1B19923CC51F600E2EA62 /* CutVideosFrameView.nib in Resources */ = {isa = PBXBuildFile; fileRef = 74B1B19323CC51F600E2EA62 /* CutVideosFrameView.nib */; };
-		85426A0C27CAF7F5E076E8B363201F51 /* CutViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 747CEE7720BCDB4BA7E0342792B5B2D3 /* CutViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8FC1F14E62397DAECA564D17AEB100FD /* NSObject+LoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 574BF60B2DB67D79955F73A17E8F8608 /* NSObject+LoadView.m */; };
-		8FCCD65E8F4B64D55D42AA205EC7E8B7 /* icon_video_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AFAEDA236406042F31202A64E4E93FE /* icon_video_bg@2x.png */; };
-		A7FAC2C3A17130D358AC4AA741011302 /* select_image_blur@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A242ADC92706845CAEBBB10CDFC5B08 /* select_image_blur@2x.png */; };
-		AF30D957552194B1ED70E73FCAD6F8CE /* SDAVAssetExportSession.m in Sources */ = {isa = PBXBuildFile; fileRef = D7630005AF8E65FC6509192D67C537E1 /* SDAVAssetExportSession.m */; };
-		B228098851CC57967B457C94303D3830 /* icon_video_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 995851F87CFD6825F0DA914D5734877B /* icon_video_bg@3x.png */; };
-		B486E30F5044CF92F3623EBD5504D639 /* icon_uniform_back_w@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8936A66CB1244D74825BE3A44BECA8FF /* icon_uniform_back_w@2x.png */; };
-		B57C77C54F7AE0475C72FF6812F35E1E /* UIView+ClickEdgeInsets.h in Headers */ = {isa = PBXBuildFile; fileRef = 35241BE7D7070B30B84FA46AFC326553 /* UIView+ClickEdgeInsets.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B721D496903A4CF5756571CF8C3E73C7 /* NSObject+LoadView.h in Headers */ = {isa = PBXBuildFile; fileRef = 526EC0973E14FCFF16F5C55E429B5BC3 /* NSObject+LoadView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BF9A506D4BE1BDF2307ACC5041982995 /* select_image_blur@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62410F545436F796DE5A0A01EC309253 /* select_image_blur@3x.png */; };
-		CF63F07B523D999DB08780578DFEF042 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EBA3D200F5CA42DEF002034258B6A1 /* LoadingView.m */; };
-		D53A0015A10EC5FEC7461F90A9F9F91D /* TJMediaManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B9C66509B23A3ED45D21ACB52DEF1372 /* TJMediaManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D66ED2ABA3219271C7DC37C6225DD065 /* TJPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1951F322D975F5164B18FB67930CD9 /* TJPhotoManager.m */; };
-		D77DD1E639D39460EB5078A74D20B608 /* CutViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 580BEB538AAD8CF08BAA6A55A14EC624 /* CutViewCell.m */; };
-		DEC5BD3AE61577702EBE99CEFAC5A03B /* Ou_CutVideo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E230E3A1D0C240758755052CD3F539D /* Ou_CutVideo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E011EC8BDCEC6ED8FE347F8F0ED1BC66 /* icon_uniform_back_w@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5832E3BD6F53313571ECC550CEF05DF1 /* icon_uniform_back_w@3x.png */; };
+		77110BFCF4A1DB8382DDE27A8CADC1BA /* TJPhotoManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 170F3C77CB4F8427552777E5B2FEBC6D /* TJPhotoManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DFB2FE7E1E0D6352E82AAB921D24F47 /* LoadingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 06535C4AF014F0EF925E959194376D12 /* LoadingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		894B8BA802E562668129E9B0CDC96B7F /* CutResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DCF08A1340B5B3BD22AF58E9FB97D897 /* CutResource.bundle */; };
+		A2EFE74FD2A5D2A36B80CE70836CB6A6 /* UIView+ClickEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 474C54067BBBB40117892312B2BDBD6E /* UIView+ClickEdgeInsets.m */; };
+		AE3A9F0650A23EEE63CF422EEB695700 /* CutViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C94F44E52DB3C0E19D1E8FEF11C120 /* CutViewCell.m */; };
+		C5654E9468B848BF8B8E062D8C068B13 /* CutVideosFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23652B0903D5BE748A255D5310C2359B /* CutVideosFrameView.m */; };
+		D1043152A73E514ED5ABC138592891AB /* CutVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 81F259DAD85A904755F9E7678245781D /* CutVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4AAC172ED520458B0D4E48E42694F2B /* NSObject+LoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FA31CAE5C6D7F03049A3EEE188929D /* NSObject+LoadView.m */; };
+		DB355DB3BC7BB6C10A31441850E43508 /* Ou_CutVideo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3624ED2A3993D7969D2C6255E74A2208 /* Ou_CutVideo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1B458D7751AC10F5C98915348DE1ECE /* CutVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B53C8FE0E3FD7BC1961F0F042FCF63 /* CutVideoViewController.m */; };
+		E26B862EB04EC21106D725BFF2B5E7EF /* Ou_CutVideo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE2B0839DCB2D8178F92848F06BC591 /* Ou_CutVideo-dummy.m */; };
 		E4D17C34DDEAE950E1439CB187F88FC1 /* Pods-Ou_CutVideo_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF697AB7FF2DE2291530F9618ED1D58 /* Pods-Ou_CutVideo_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E53E602C264DE63B76E5FFE1B9AAC3F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		F47BF016C50D959D0D121101A4F0A515 /* icon_video_bar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4FA90CC5B81BFBBC8FD03E33FA2A04E /* icon_video_bar@3x.png */; };
+		E5EDAFAC2887B2D7A6266635F2400432 /* SDAVAssetExportSession.m in Sources */ = {isa = PBXBuildFile; fileRef = AB43DF88306B69B90301A766217F115D /* SDAVAssetExportSession.m */; };
+		F7B54EF568EB13A4A181D159CB0395BF /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8359E1ACF28D2D179B4C2E4FB122FE33 /* LoadingView.m */; };
+		F8379EE8F0743A6FF197BC05279BB238 /* CutViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 7617CCB3AB5524A90E07408B595997B6 /* CutViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC460F29DE03CD5A38725DBF438DB12F /* SDAVAssetExportSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D9E12066E2729F230C454073DEF01E2 /* SDAVAssetExportSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		47ABC7A2AE03A76B585E881C1FCD3CAD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 86F0CD33760018BC7ECD099E6BD2D433;
-			remoteInfo = "Ou_CutVideo-Ou_CutVideo";
-		};
 		5BF2C0FD75C63B60116FD80B4958250E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -76,83 +55,64 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02D8C6A3E103D8FA53FC10FE56D7189F /* Ou_CutVideo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Ou_CutVideo.modulemap; sourceTree = "<group>"; };
-		02EBA3D200F5CA42DEF002034258B6A1 /* LoadingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
-		0AFAEDA236406042F31202A64E4E93FE /* icon_video_bg@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon_video_bg@2x.png"; path = "Ou_CutVideo/Assets/icon_video_bg@2x.png"; sourceTree = "<group>"; };
+		06535C4AF014F0EF925E959194376D12 /* LoadingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
 		0BBEED466CA956EEF60D6BC242340B52 /* Pods-Ou_CutVideo_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Ou_CutVideo_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		0D098BCABECDC536089EE237D3355F2C /* CutVideoViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CutVideoViewController.h; sourceTree = "<group>"; };
 		13C1B05C085D1F8921BB696EF90BC855 /* Pods-Ou_CutVideo_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Ou_CutVideo_Example-dummy.m"; sourceTree = "<group>"; };
-		2055F1C65264B82AFFD601289DD1C11B /* Ou_CutVideo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Ou_CutVideo-dummy.m"; sourceTree = "<group>"; };
-		21D5D980ECD9CCED1514B99E528023E7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		2844A7CA8DD8FA482A7BB87A403D170C /* TJPhotoManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TJPhotoManager.h; sourceTree = "<group>"; };
+		170F3C77CB4F8427552777E5B2FEBC6D /* TJPhotoManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TJPhotoManager.h; sourceTree = "<group>"; };
+		23652B0903D5BE748A255D5310C2359B /* CutVideosFrameView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CutVideosFrameView.m; sourceTree = "<group>"; };
+		268E0AF51419DD77C311A6B91F12FE76 /* UIView+ClickEdgeInsets.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+ClickEdgeInsets.h"; sourceTree = "<group>"; };
+		2F3359D24688C772687F4CAE8E514DC7 /* TJPhotoManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TJPhotoManager.m; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3251B0299637BFDEA442DDF4420A3D73 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		3273F312A26BEFE5E94286150C6CC53E /* TJMediaManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TJMediaManager.m; sourceTree = "<group>"; };
-		35241BE7D7070B30B84FA46AFC326553 /* UIView+ClickEdgeInsets.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+ClickEdgeInsets.h"; sourceTree = "<group>"; };
-		40DA9420242721425C26160EF40A869B /* icon_video_bar@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon_video_bar@2x.png"; path = "Ou_CutVideo/Assets/icon_video_bar@2x.png"; sourceTree = "<group>"; };
+		3624ED2A3993D7969D2C6255E74A2208 /* Ou_CutVideo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Ou_CutVideo-umbrella.h"; sourceTree = "<group>"; };
+		3D9E12066E2729F230C454073DEF01E2 /* SDAVAssetExportSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SDAVAssetExportSession.h; sourceTree = "<group>"; };
+		474C54067BBBB40117892312B2BDBD6E /* UIView+ClickEdgeInsets.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+ClickEdgeInsets.m"; sourceTree = "<group>"; };
+		4DE2B0839DCB2D8178F92848F06BC591 /* Ou_CutVideo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Ou_CutVideo-dummy.m"; sourceTree = "<group>"; };
 		4E0BCE2A20D7348FCF6FC41B2D0E0D6D /* Pods-Ou_CutVideo_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ou_CutVideo_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		526EC0973E14FCFF16F5C55E429B5BC3 /* NSObject+LoadView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+LoadView.h"; sourceTree = "<group>"; };
-		574BF60B2DB67D79955F73A17E8F8608 /* NSObject+LoadView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LoadView.m"; sourceTree = "<group>"; };
-		580BEB538AAD8CF08BAA6A55A14EC624 /* CutViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CutViewCell.m; sourceTree = "<group>"; };
-		5832E3BD6F53313571ECC550CEF05DF1 /* icon_uniform_back_w@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon_uniform_back_w@3x.png"; path = "Ou_CutVideo/Assets/icon_uniform_back_w@3x.png"; sourceTree = "<group>"; };
-		5A3E744DC5D748A96D8C4951DEB1CC4D /* Ou_CutVideo.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Ou_CutVideo.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		53902BEB6FCE0DA9D55AF0BA371923DB /* Ou_CutVideo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Ou_CutVideo.modulemap; sourceTree = "<group>"; };
+		58FA31CAE5C6D7F03049A3EEE188929D /* NSObject+LoadView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LoadView.m"; sourceTree = "<group>"; };
 		5E2B8DC1F995A3B80F2BE8C4B2581459 /* Pods-Ou_CutVideo_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Ou_CutVideo_Example-Info.plist"; sourceTree = "<group>"; };
-		62410F545436F796DE5A0A01EC309253 /* select_image_blur@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "select_image_blur@3x.png"; path = "Ou_CutVideo/Assets/select_image_blur@3x.png"; sourceTree = "<group>"; };
-		6F1951F322D975F5164B18FB67930CD9 /* TJPhotoManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TJPhotoManager.m; sourceTree = "<group>"; };
-		73BB7A57CE3C4C0B72686BDC1227F2B0 /* Ou_CutVideo.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ou_CutVideo.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		747CEE7720BCDB4BA7E0342792B5B2D3 /* CutViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CutViewCell.h; sourceTree = "<group>"; };
-		74B1B19123CC51F600E2EA62 /* CutVideoViewController.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = CutVideoViewController.nib; path = Ou_CutVideo/Assets/CutVideoViewController.nib; sourceTree = "<group>"; };
-		74B1B19223CC51F600E2EA62 /* CutViewCell.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = CutViewCell.nib; path = Ou_CutVideo/Assets/CutViewCell.nib; sourceTree = "<group>"; };
-		74B1B19323CC51F600E2EA62 /* CutVideosFrameView.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = CutVideosFrameView.nib; path = Ou_CutVideo/Assets/CutVideosFrameView.nib; sourceTree = "<group>"; };
+		67B53C8FE0E3FD7BC1961F0F042FCF63 /* CutVideoViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CutVideoViewController.m; sourceTree = "<group>"; };
+		7617CCB3AB5524A90E07408B595997B6 /* CutViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CutViewCell.h; sourceTree = "<group>"; };
 		76FDB86DF058986B425D1D01AFDBC50C /* Pods-Ou_CutVideo_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Ou_CutVideo_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7D198693A83F4535DEF7E5FCD7015333 /* Pods_Ou_CutVideo_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ou_CutVideo_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E230E3A1D0C240758755052CD3F539D /* Ou_CutVideo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Ou_CutVideo-umbrella.h"; sourceTree = "<group>"; };
+		7D198693A83F4535DEF7E5FCD7015333 /* Pods_Ou_CutVideo_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Ou_CutVideo_Tests.framework; path = "Pods-Ou_CutVideo_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FF4C9BAA79023DF003D73C4BE5F35F3 /* Pods-Ou_CutVideo_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Ou_CutVideo_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		89157BC2AAC4E2AEC3D50AC2E34B3082 /* Pods_Ou_CutVideo_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ou_CutVideo_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8936A66CB1244D74825BE3A44BECA8FF /* icon_uniform_back_w@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon_uniform_back_w@2x.png"; path = "Ou_CutVideo/Assets/icon_uniform_back_w@2x.png"; sourceTree = "<group>"; };
-		911EE7FA544A7087EA393FB90502B9FC /* CutVideosFrameView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CutVideosFrameView.m; sourceTree = "<group>"; };
+		81F259DAD85A904755F9E7678245781D /* CutVideoViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CutVideoViewController.h; sourceTree = "<group>"; };
+		8359E1ACF28D2D179B4C2E4FB122FE33 /* LoadingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		89157BC2AAC4E2AEC3D50AC2E34B3082 /* Pods_Ou_CutVideo_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Ou_CutVideo_Example.framework; path = "Pods-Ou_CutVideo_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93B9B1493EB751A203C13B22BDC74F38 /* Pods-Ou_CutVideo_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ou_CutVideo_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9570CAC963921EED6BB4E415B3E47C49 /* Ou_CutVideo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Ou_CutVideo-Info.plist"; sourceTree = "<group>"; };
-		995851F87CFD6825F0DA914D5734877B /* icon_video_bg@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon_video_bg@3x.png"; path = "Ou_CutVideo/Assets/icon_video_bg@3x.png"; sourceTree = "<group>"; };
-		9A242ADC92706845CAEBBB10CDFC5B08 /* select_image_blur@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "select_image_blur@2x.png"; path = "Ou_CutVideo/Assets/select_image_blur@2x.png"; sourceTree = "<group>"; };
 		9BA124214F35CB869B85FFFDA8220C6D /* Pods-Ou_CutVideo_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Ou_CutVideo_Tests-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E5891BB2D9B4C8C87D6A6E04A88A3FC /* Pods-Ou_CutVideo_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Ou_CutVideo_Tests-Info.plist"; sourceTree = "<group>"; };
-		A4FA90CC5B81BFBBC8FD03E33FA2A04E /* icon_video_bar@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon_video_bar@3x.png"; path = "Ou_CutVideo/Assets/icon_video_bar@3x.png"; sourceTree = "<group>"; };
-		ABAF386B23B405A8B2C756E22D0E7C97 /* CutVideosFrameView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CutVideosFrameView.h; sourceTree = "<group>"; };
-		B3D034AA2E707D23F96ECF014946FD2D /* ResourceBundle-Ou_CutVideo-Ou_CutVideo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Ou_CutVideo-Ou_CutVideo-Info.plist"; sourceTree = "<group>"; };
-		B9C66509B23A3ED45D21ACB52DEF1372 /* TJMediaManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TJMediaManager.h; sourceTree = "<group>"; };
+		A3EE241804EB979D2E6406C394C297E8 /* NSObject+LoadView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+LoadView.h"; sourceTree = "<group>"; };
+		AB43DF88306B69B90301A766217F115D /* SDAVAssetExportSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SDAVAssetExportSession.m; sourceTree = "<group>"; };
 		BFF697AB7FF2DE2291530F9618ED1D58 /* Pods-Ou_CutVideo_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Ou_CutVideo_Tests-umbrella.h"; sourceTree = "<group>"; };
 		C0C4CB46F43B78B9671DF7E481A9BF6F /* Pods-Ou_CutVideo_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ou_CutVideo_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C38A73573638A248FF8BFEBAA4138995 /* SDAVAssetExportSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SDAVAssetExportSession.h; sourceTree = "<group>"; };
-		D29FFCF02897D752CDD6EE0DF0EB765A /* Ou_CutVideo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ou_CutVideo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7FCEEB8A873D47F99AB565425E49236 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C9C94F44E52DB3C0E19D1E8FEF11C120 /* CutViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CutViewCell.m; sourceTree = "<group>"; };
+		CB3D7E6F8FA15C2A753C80178406BB1C /* CutVideosFrameView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CutVideosFrameView.h; sourceTree = "<group>"; };
+		D29FFCF02897D752CDD6EE0DF0EB765A /* Ou_CutVideo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Ou_CutVideo.framework; path = Ou_CutVideo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4DB3CDAB7A17EC27019D9A02BE92B33 /* Pods-Ou_CutVideo_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Ou_CutVideo_Example-frameworks.sh"; sourceTree = "<group>"; };
-		D63962DCC9069842FC96DCA281786B27 /* Ou_CutVideo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Ou_CutVideo-prefix.pch"; sourceTree = "<group>"; };
 		D6F8F2C2BB57E154102CED887553E1B9 /* Pods-Ou_CutVideo_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Ou_CutVideo_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D7630005AF8E65FC6509192D67C537E1 /* SDAVAssetExportSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SDAVAssetExportSession.m; sourceTree = "<group>"; };
-		DAB1B7844CEF46DDAEB23A1C99A062DC /* LoadingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		DCF08A1340B5B3BD22AF58E9FB97D897 /* CutResource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = CutResource.bundle; path = Ou_CutVideo/CutResource.bundle; sourceTree = "<group>"; };
+		DFF9503582F963D4A1B89F75D62FC87C /* Ou_CutVideo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Ou_CutVideo-Info.plist"; sourceTree = "<group>"; };
 		E0FD0D38DB63BF029E9856BFA58426E6 /* Pods-Ou_CutVideo_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ou_CutVideo_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E1B10104F06B510BB40F25D09065DEFF /* TJMediaManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TJMediaManager.h; sourceTree = "<group>"; };
+		E2B54C2612362B8E52DF0DAF9354F8D8 /* Ou_CutVideo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Ou_CutVideo-prefix.pch"; sourceTree = "<group>"; };
+		E2C006BE44C0A526190DE53107E9FC26 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		E2EDB17659146730BF2676722AE141DC /* Pods-Ou_CutVideo_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Ou_CutVideo_Example.modulemap"; sourceTree = "<group>"; };
-		E5FCF6491D10E4019D31AE28AE6E4061 /* Ou_CutVideo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Ou_CutVideo.xcconfig; sourceTree = "<group>"; };
 		E9581011461E072E0B46011D8522AF20 /* Pods-Ou_CutVideo_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Ou_CutVideo_Tests.modulemap"; sourceTree = "<group>"; };
-		F54162D8FE7411FC23BE4F270E01158D /* UIView+ClickEdgeInsets.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+ClickEdgeInsets.m"; sourceTree = "<group>"; };
+		EE944192ED0CBAE48C1DF5EF98F940F6 /* TJMediaManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TJMediaManager.m; sourceTree = "<group>"; };
+		F4B70C8B9ED239EBEC65B025AE2A8D49 /* Ou_CutVideo.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Ou_CutVideo.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F87DBD94001C6454C1B3151FED3567A5 /* Pods-Ou_CutVideo_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Ou_CutVideo_Example-umbrella.h"; sourceTree = "<group>"; };
-		FD77E882258E9B7B5B140BE13EF1B952 /* CutVideoViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CutVideoViewController.m; sourceTree = "<group>"; };
+		FD6C0B85C4349BABD7A6DB4C98A2AE3F /* Ou_CutVideo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Ou_CutVideo.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		02EBAFD7DF28FB04D81B5E8EEE9184E4 /* Frameworks */ = {
+		7542E8E853AF2DB224F99289B2B4D807 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E53E602C264DE63B76E5FFE1B9AAC3F5 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		84E5442CDC88D2194B5CD6DAC15ECEEB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				5A982E4ED17C71E112D9F8AE397BA4F2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +135,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08FBD7C8C8FA32FD8D0C82AE0975099A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DCF08A1340B5B3BD22AF58E9FB97D897 /* CutResource.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		0C26B9861C55E1B0236FFEFCF2563029 /* Pods-Ou_CutVideo_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,16 +160,24 @@
 			path = "Target Support Files/Pods-Ou_CutVideo_Example";
 			sourceTree = "<group>";
 		};
-		29194D75EA731FCF74C2A61873F8645C /* Model */ = {
+		331A9A80F08388A060D798D12CFEF64F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B9C66509B23A3ED45D21ACB52DEF1372 /* TJMediaManager.h */,
-				3273F312A26BEFE5E94286150C6CC53E /* TJMediaManager.m */,
-				2844A7CA8DD8FA482A7BB87A403D170C /* TJPhotoManager.h */,
-				6F1951F322D975F5164B18FB67930CD9 /* TJPhotoManager.m */,
+				CB3D7E6F8FA15C2A753C80178406BB1C /* CutVideosFrameView.h */,
+				23652B0903D5BE748A255D5310C2359B /* CutVideosFrameView.m */,
+				7617CCB3AB5524A90E07408B595997B6 /* CutViewCell.h */,
+				C9C94F44E52DB3C0E19D1E8FEF11C120 /* CutViewCell.m */,
+				06535C4AF014F0EF925E959194376D12 /* LoadingView.h */,
+				8359E1ACF28D2D179B4C2E4FB122FE33 /* LoadingView.m */,
+				A3EE241804EB979D2E6406C394C297E8 /* NSObject+LoadView.h */,
+				58FA31CAE5C6D7F03049A3EEE188929D /* NSObject+LoadView.m */,
+				3D9E12066E2729F230C454073DEF01E2 /* SDAVAssetExportSession.h */,
+				AB43DF88306B69B90301A766217F115D /* SDAVAssetExportSession.m */,
+				268E0AF51419DD77C311A6B91F12FE76 /* UIView+ClickEdgeInsets.h */,
+				474C54067BBBB40117892312B2BDBD6E /* UIView+ClickEdgeInsets.m */,
 			);
-			name = Model;
-			path = Ou_CutVideo/Classes/Model;
+			name = View;
+			path = Ou_CutVideo/Classes/View;
 			sourceTree = "<group>";
 		};
 		3A2C4B7429337C78ECC343EE07180BB6 /* Targets Support Files */ = {
@@ -213,39 +189,9 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		516C2DFEBCD15330BB823BC1818AAB8F /* Ou_CutVideo */ = {
+		42843A8AC82680003B4CC7DEA482330F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FBE295D54CE99F9EE0F787EFCD2300BF /* Controller */,
-				29194D75EA731FCF74C2A61873F8645C /* Model */,
-				E77091607E694B70F2C38E935576A452 /* Pod */,
-				A9ED3F832C20FDB020C8520FAC8C9D77 /* Resources */,
-				7A4717587E3C11948EDAA672FB7F73B5 /* Support Files */,
-				C56360F5B71014637B053B0E6745A5C5 /* View */,
-			);
-			name = Ou_CutVideo;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		7A4717587E3C11948EDAA672FB7F73B5 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				02D8C6A3E103D8FA53FC10FE56D7189F /* Ou_CutVideo.modulemap */,
-				E5FCF6491D10E4019D31AE28AE6E4061 /* Ou_CutVideo.xcconfig */,
-				2055F1C65264B82AFFD601289DD1C11B /* Ou_CutVideo-dummy.m */,
-				9570CAC963921EED6BB4E415B3E47C49 /* Ou_CutVideo-Info.plist */,
-				D63962DCC9069842FC96DCA281786B27 /* Ou_CutVideo-prefix.pch */,
-				7E230E3A1D0C240758755052CD3F539D /* Ou_CutVideo-umbrella.h */,
-				B3D034AA2E707D23F96ECF014946FD2D /* ResourceBundle-Ou_CutVideo-Ou_CutVideo-Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Ou_CutVideo";
-			sourceTree = "<group>";
-		};
-		8F2CC706B7FA5B5BAF72934A2919185E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				73BB7A57CE3C4C0B72686BDC1227F2B0 /* Ou_CutVideo.bundle */,
 				D29FFCF02897D752CDD6EE0DF0EB765A /* Ou_CutVideo.framework */,
 				89157BC2AAC4E2AEC3D50AC2E34B3082 /* Pods_Ou_CutVideo_Example.framework */,
 				7D198693A83F4535DEF7E5FCD7015333 /* Pods_Ou_CutVideo_Tests.framework */,
@@ -253,22 +199,50 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A9ED3F832C20FDB020C8520FAC8C9D77 /* Resources */ = {
+		476ABA1FD196CAFC6C804C5A477590E6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				74B1B19323CC51F600E2EA62 /* CutVideosFrameView.nib */,
-				74B1B19123CC51F600E2EA62 /* CutVideoViewController.nib */,
-				74B1B19223CC51F600E2EA62 /* CutViewCell.nib */,
-				8936A66CB1244D74825BE3A44BECA8FF /* icon_uniform_back_w@2x.png */,
-				5832E3BD6F53313571ECC550CEF05DF1 /* icon_uniform_back_w@3x.png */,
-				40DA9420242721425C26160EF40A869B /* icon_video_bar@2x.png */,
-				A4FA90CC5B81BFBBC8FD03E33FA2A04E /* icon_video_bar@3x.png */,
-				0AFAEDA236406042F31202A64E4E93FE /* icon_video_bg@2x.png */,
-				995851F87CFD6825F0DA914D5734877B /* icon_video_bg@3x.png */,
-				9A242ADC92706845CAEBBB10CDFC5B08 /* select_image_blur@2x.png */,
-				62410F545436F796DE5A0A01EC309253 /* select_image_blur@3x.png */,
+				81F259DAD85A904755F9E7678245781D /* CutVideoViewController.h */,
+				67B53C8FE0E3FD7BC1961F0F042FCF63 /* CutVideoViewController.m */,
 			);
-			name = Resources;
+			name = Controller;
+			path = Ou_CutVideo/Classes/Controller;
+			sourceTree = "<group>";
+		};
+		893F5ED447DD1F6FAE541644566E842E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				E2C006BE44C0A526190DE53107E9FC26 /* LICENSE */,
+				F4B70C8B9ED239EBEC65B025AE2A8D49 /* Ou_CutVideo.podspec */,
+				C7FCEEB8A873D47F99AB565425E49236 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		89ED500A38C951FED376B315B7B6D99B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1B10104F06B510BB40F25D09065DEFF /* TJMediaManager.h */,
+				EE944192ED0CBAE48C1DF5EF98F940F6 /* TJMediaManager.m */,
+				170F3C77CB4F8427552777E5B2FEBC6D /* TJPhotoManager.h */,
+				2F3359D24688C772687F4CAE8E514DC7 /* TJPhotoManager.m */,
+			);
+			name = Model;
+			path = Ou_CutVideo/Classes/Model;
+			sourceTree = "<group>";
+		};
+		A0B64E459D28BCC08921F5E031BF35F4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				53902BEB6FCE0DA9D55AF0BA371923DB /* Ou_CutVideo.modulemap */,
+				FD6C0B85C4349BABD7A6DB4C98A2AE3F /* Ou_CutVideo.xcconfig */,
+				4DE2B0839DCB2D8178F92848F06BC591 /* Ou_CutVideo-dummy.m */,
+				DFF9503582F963D4A1B89F75D62FC87C /* Ou_CutVideo-Info.plist */,
+				E2B54C2612362B8E52DF0DAF9354F8D8 /* Ou_CutVideo-prefix.pch */,
+				3624ED2A3993D7969D2C6255E74A2208 /* Ou_CutVideo-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Ou_CutVideo";
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -279,33 +253,13 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C56360F5B71014637B053B0E6745A5C5 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				ABAF386B23B405A8B2C756E22D0E7C97 /* CutVideosFrameView.h */,
-				911EE7FA544A7087EA393FB90502B9FC /* CutVideosFrameView.m */,
-				747CEE7720BCDB4BA7E0342792B5B2D3 /* CutViewCell.h */,
-				580BEB538AAD8CF08BAA6A55A14EC624 /* CutViewCell.m */,
-				DAB1B7844CEF46DDAEB23A1C99A062DC /* LoadingView.h */,
-				02EBA3D200F5CA42DEF002034258B6A1 /* LoadingView.m */,
-				526EC0973E14FCFF16F5C55E429B5BC3 /* NSObject+LoadView.h */,
-				574BF60B2DB67D79955F73A17E8F8608 /* NSObject+LoadView.m */,
-				C38A73573638A248FF8BFEBAA4138995 /* SDAVAssetExportSession.h */,
-				D7630005AF8E65FC6509192D67C537E1 /* SDAVAssetExportSession.m */,
-				35241BE7D7070B30B84FA46AFC326553 /* UIView+ClickEdgeInsets.h */,
-				F54162D8FE7411FC23BE4F270E01158D /* UIView+ClickEdgeInsets.m */,
-			);
-			name = View;
-			path = Ou_CutVideo/Classes/View;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				F17B42F04267286EE923C8E4B28C7760 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				8F2CC706B7FA5B5BAF72934A2919185E /* Products */,
+				42843A8AC82680003B4CC7DEA482330F /* Products */,
 				3A2C4B7429337C78ECC343EE07180BB6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -318,20 +272,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E77091607E694B70F2C38E935576A452 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				3251B0299637BFDEA442DDF4420A3D73 /* LICENSE */,
-				5A3E744DC5D748A96D8C4951DEB1CC4D /* Ou_CutVideo.podspec */,
-				21D5D980ECD9CCED1514B99E528023E7 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		F17B42F04267286EE923C8E4B28C7760 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				516C2DFEBCD15330BB823BC1818AAB8F /* Ou_CutVideo */,
+				F92B3C97C6DA8E984A905A05BFB643F3 /* Ou_CutVideo */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -352,14 +296,18 @@
 			path = "Target Support Files/Pods-Ou_CutVideo_Tests";
 			sourceTree = "<group>";
 		};
-		FBE295D54CE99F9EE0F787EFCD2300BF /* Controller */ = {
+		F92B3C97C6DA8E984A905A05BFB643F3 /* Ou_CutVideo */ = {
 			isa = PBXGroup;
 			children = (
-				0D098BCABECDC536089EE237D3355F2C /* CutVideoViewController.h */,
-				FD77E882258E9B7B5B140BE13EF1B952 /* CutVideoViewController.m */,
+				476ABA1FD196CAFC6C804C5A477590E6 /* Controller */,
+				89ED500A38C951FED376B315B7B6D99B /* Model */,
+				893F5ED447DD1F6FAE541644566E842E /* Pod */,
+				08FBD7C8C8FA32FD8D0C82AE0975099A /* Resources */,
+				A0B64E459D28BCC08921F5E031BF35F4 /* Support Files */,
+				331A9A80F08388A060D798D12CFEF64F /* View */,
 			);
-			name = Controller;
-			path = Ou_CutVideo/Classes/Controller;
+			name = Ou_CutVideo;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,20 +321,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4AF3B54DFD776A6F8A31EE3BDDECB43A /* Headers */ = {
+		ABC577AE31767407F69EE9AF8680B650 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00A9B7BB772995F3FBA78237BCE90927 /* CutVideosFrameView.h in Headers */,
-				62D30ADE1C716CDF23732BC6F669FC08 /* CutVideoViewController.h in Headers */,
-				85426A0C27CAF7F5E076E8B363201F51 /* CutViewCell.h in Headers */,
-				2D1DBFB2FD79807C28F6B7A40756D3C3 /* LoadingView.h in Headers */,
-				B721D496903A4CF5756571CF8C3E73C7 /* NSObject+LoadView.h in Headers */,
-				DEC5BD3AE61577702EBE99CEFAC5A03B /* Ou_CutVideo-umbrella.h in Headers */,
-				2450C2386C642DF5FE356304210F1178 /* SDAVAssetExportSession.h in Headers */,
-				D53A0015A10EC5FEC7461F90A9F9F91D /* TJMediaManager.h in Headers */,
-				5595891EEE86BFA7AD7CAEC080A6F129 /* TJPhotoManager.h in Headers */,
-				B57C77C54F7AE0475C72FF6812F35E1E /* UIView+ClickEdgeInsets.h in Headers */,
+				12C3676AAC6A1057015250385202563F /* CutVideosFrameView.h in Headers */,
+				D1043152A73E514ED5ABC138592891AB /* CutVideoViewController.h in Headers */,
+				F8379EE8F0743A6FF197BC05279BB238 /* CutViewCell.h in Headers */,
+				7DFB2FE7E1E0D6352E82AAB921D24F47 /* LoadingView.h in Headers */,
+				08586640AFFDF220694ED53D2B46D248 /* NSObject+LoadView.h in Headers */,
+				DB355DB3BC7BB6C10A31441850E43508 /* Ou_CutVideo-umbrella.h in Headers */,
+				FC460F29DE03CD5A38725DBF438DB12F /* SDAVAssetExportSession.h in Headers */,
+				1BB6B72167635224AC9588AF1D7041EF /* TJMediaManager.h in Headers */,
+				77110BFCF4A1DB8382DDE27A8CADC1BA /* TJPhotoManager.h in Headers */,
+				2A4A87AECDA669321B6CEB2DCB7B5751 /* UIView+ClickEdgeInsets.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,39 +351,21 @@
 /* Begin PBXNativeTarget section */
 		7C2599CB6267209B8DFC7BA1B0BEE146 /* Ou_CutVideo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CCC7EB191760F2CDAC50C9E0C5AB6F2C /* Build configuration list for PBXNativeTarget "Ou_CutVideo" */;
+			buildConfigurationList = 9B1BDC7BB36CD0A593BD462D4C43F7F7 /* Build configuration list for PBXNativeTarget "Ou_CutVideo" */;
 			buildPhases = (
-				4AF3B54DFD776A6F8A31EE3BDDECB43A /* Headers */,
-				6350EA0C7B73E0641744309EBDC72D92 /* Sources */,
-				02EBAFD7DF28FB04D81B5E8EEE9184E4 /* Frameworks */,
-				3A5A831B081C9FF4A551A09AD15B2761 /* Resources */,
+				ABC577AE31767407F69EE9AF8680B650 /* Headers */,
+				612C7EDEF305E30F6E0604EF7A7C6034 /* Sources */,
+				7542E8E853AF2DB224F99289B2B4D807 /* Frameworks */,
+				64FD43BEEA4417E976798E34E778A6F3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3EE1B1AB12A527B655A93C76CFD0D4B8 /* PBXTargetDependency */,
 			);
 			name = Ou_CutVideo;
 			productName = Ou_CutVideo;
 			productReference = D29FFCF02897D752CDD6EE0DF0EB765A /* Ou_CutVideo.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		86F0CD33760018BC7ECD099E6BD2D433 /* Ou_CutVideo-Ou_CutVideo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B856CE40A64E44AF4F9265AB86702DE2 /* Build configuration list for PBXNativeTarget "Ou_CutVideo-Ou_CutVideo" */;
-			buildPhases = (
-				5CBA444D5F7DB426D14B8A5C18867ED5 /* Sources */,
-				84E5442CDC88D2194B5CD6DAC15ECEEB /* Frameworks */,
-				D749C91BB18ADCA3044724F83CF59C8C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Ou_CutVideo-Ou_CutVideo";
-			productName = "Ou_CutVideo-Ou_CutVideo";
-			productReference = 73BB7A57CE3C4C0B72686BDC1227F2B0 /* Ou_CutVideo.bundle */;
-			productType = "com.apple.product-type.bundle";
 		};
 		A75AA89391C24D01427B3F9F8352469F /* Pods-Ou_CutVideo_Example */ = {
 			isa = PBXNativeTarget;
@@ -492,12 +422,11 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 8F2CC706B7FA5B5BAF72934A2919185E /* Products */;
+			productRefGroup = 42843A8AC82680003B4CC7DEA482330F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				7C2599CB6267209B8DFC7BA1B0BEE146 /* Ou_CutVideo */,
-				86F0CD33760018BC7ECD099E6BD2D433 /* Ou_CutVideo-Ou_CutVideo */,
 				A75AA89391C24D01427B3F9F8352469F /* Pods-Ou_CutVideo_Example */,
 				C457356D370D05B89412A6E8A14B0F7F /* Pods-Ou_CutVideo_Tests */,
 			);
@@ -505,14 +434,11 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3A5A831B081C9FF4A551A09AD15B2761 /* Resources */ = {
+		64FD43BEEA4417E976798E34E778A6F3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49564D61924349B8947136278A54DA70 /* Ou_CutVideo.bundle in Resources */,
-				74B1B19823CC51F600E2EA62 /* CutVideosFrameView.nib in Resources */,
-				74B1B19623CC51F600E2EA62 /* CutViewCell.nib in Resources */,
-				74B1B19423CC51F600E2EA62 /* CutVideoViewController.nib in Resources */,
+				894B8BA802E562668129E9B0CDC96B7F /* CutResource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,24 +446,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D749C91BB18ADCA3044724F83CF59C8C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B486E30F5044CF92F3623EBD5504D639 /* icon_uniform_back_w@2x.png in Resources */,
-				E011EC8BDCEC6ED8FE347F8F0ED1BC66 /* icon_uniform_back_w@3x.png in Resources */,
-				3AE410AA3CB72DCB0E19127CBA7E2B2E /* icon_video_bar@2x.png in Resources */,
-				F47BF016C50D959D0D121101A4F0A515 /* icon_video_bar@3x.png in Resources */,
-				8FCCD65E8F4B64D55D42AA205EC7E8B7 /* icon_video_bg@2x.png in Resources */,
-				74B1B19523CC51F600E2EA62 /* CutVideoViewController.nib in Resources */,
-				B228098851CC57967B457C94303D3830 /* icon_video_bg@3x.png in Resources */,
-				A7FAC2C3A17130D358AC4AA741011302 /* select_image_blur@2x.png in Resources */,
-				74B1B19923CC51F600E2EA62 /* CutVideosFrameView.nib in Resources */,
-				BF9A506D4BE1BDF2307ACC5041982995 /* select_image_blur@3x.png in Resources */,
-				74B1B19723CC51F600E2EA62 /* CutViewCell.nib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,27 +459,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5CBA444D5F7DB426D14B8A5C18867ED5 /* Sources */ = {
+		612C7EDEF305E30F6E0604EF7A7C6034 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6350EA0C7B73E0641744309EBDC72D92 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A27FDC103DCF52948A400E04D07C0F3 /* CutVideosFrameView.m in Sources */,
-				51DDCB0F09BB5CE7DD423BB3D1A40AEB /* CutVideoViewController.m in Sources */,
-				D77DD1E639D39460EB5078A74D20B608 /* CutViewCell.m in Sources */,
-				CF63F07B523D999DB08780578DFEF042 /* LoadingView.m in Sources */,
-				8FC1F14E62397DAECA564D17AEB100FD /* NSObject+LoadView.m in Sources */,
-				07D0060617A0424B6AF7D41B6D4075CC /* Ou_CutVideo-dummy.m in Sources */,
-				AF30D957552194B1ED70E73FCAD6F8CE /* SDAVAssetExportSession.m in Sources */,
-				26828253EB5E5A74CDBBF52AA20D1FCF /* TJMediaManager.m in Sources */,
-				D66ED2ABA3219271C7DC37C6225DD065 /* TJPhotoManager.m in Sources */,
-				4E159CB4D1BE755F840EF13F5A841742 /* UIView+ClickEdgeInsets.m in Sources */,
+				C5654E9468B848BF8B8E062D8C068B13 /* CutVideosFrameView.m in Sources */,
+				E1B458D7751AC10F5C98915348DE1ECE /* CutVideoViewController.m in Sources */,
+				AE3A9F0650A23EEE63CF422EEB695700 /* CutViewCell.m in Sources */,
+				F7B54EF568EB13A4A181D159CB0395BF /* LoadingView.m in Sources */,
+				D4AAC172ED520458B0D4E48E42694F2B /* NSObject+LoadView.m in Sources */,
+				E26B862EB04EC21106D725BFF2B5E7EF /* Ou_CutVideo-dummy.m in Sources */,
+				E5EDAFAC2887B2D7A6266635F2400432 /* SDAVAssetExportSession.m in Sources */,
+				56C3E1B4C2C9A31B312C9ACE8D4D248B /* TJMediaManager.m in Sources */,
+				08C8AFED88B754906E9D5D4F9F8C46B2 /* TJPhotoManager.m in Sources */,
+				A2EFE74FD2A5D2A36B80CE70836CB6A6 /* UIView+ClickEdgeInsets.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,12 +501,6 @@
 			target = 7C2599CB6267209B8DFC7BA1B0BEE146 /* Ou_CutVideo */;
 			targetProxy = 5BF2C0FD75C63B60116FD80B4958250E /* PBXContainerItemProxy */;
 		};
-		3EE1B1AB12A527B655A93C76CFD0D4B8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Ou_CutVideo-Ou_CutVideo";
-			target = 86F0CD33760018BC7ECD099E6BD2D433 /* Ou_CutVideo-Ou_CutVideo */;
-			targetProxy = 47ABC7A2AE03A76B585E881C1FCD3CAD /* PBXContainerItemProxy */;
-		};
 		CC0A720E860DE82952B967F561274A10 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Ou_CutVideo_Example";
@@ -615,20 +510,38 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		427025E5466D9286D8D26755FEF3E394 /* Debug */ = {
+		30FB3BAC1809F97FB82D5CABA0AD239B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5FCF6491D10E4019D31AE28AE6E4061 /* Ou_CutVideo.xcconfig */;
+			baseConfigurationReference = FD6C0B85C4349BABD7A6DB4C98A2AE3F /* Ou_CutVideo.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Ou_CutVideo";
-				IBSC_MODULE = Ou_CutVideo;
-				INFOPLIST_FILE = "Target Support Files/Ou_CutVideo/ResourceBundle-Ou_CutVideo-Ou_CutVideo-Info.plist";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Ou_CutVideo/Ou_CutVideo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Ou_CutVideo/Ou_CutVideo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Ou_CutVideo/Ou_CutVideo.modulemap";
+				PRODUCT_MODULE_NAME = Ou_CutVideo;
 				PRODUCT_NAME = Ou_CutVideo;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -689,94 +602,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		4F0C8B29EDD363AA575ACB2C2A6C5999 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5FCF6491D10E4019D31AE28AE6E4061 /* Ou_CutVideo.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Ou_CutVideo/Ou_CutVideo-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Ou_CutVideo/Ou_CutVideo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Ou_CutVideo/Ou_CutVideo.modulemap";
-				PRODUCT_MODULE_NAME = Ou_CutVideo;
-				PRODUCT_NAME = Ou_CutVideo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5D01D7D10EEECE576DB244F052B6CA5D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5FCF6491D10E4019D31AE28AE6E4061 /* Ou_CutVideo.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Ou_CutVideo/Ou_CutVideo-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Ou_CutVideo/Ou_CutVideo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Ou_CutVideo/Ou_CutVideo.modulemap";
-				PRODUCT_MODULE_NAME = Ou_CutVideo;
-				PRODUCT_NAME = Ou_CutVideo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		79EF7C84959B11431E8EBF7B4B64D6E6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5FCF6491D10E4019D31AE28AE6E4061 /* Ou_CutVideo.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Ou_CutVideo";
-				IBSC_MODULE = Ou_CutVideo;
-				INFOPLIST_FILE = "Target Support Files/Ou_CutVideo/ResourceBundle-Ou_CutVideo-Ou_CutVideo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = Ou_CutVideo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -880,6 +705,42 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		B2A89B70AA432DD2561D011EF64D1F67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD6C0B85C4349BABD7A6DB4C98A2AE3F /* Ou_CutVideo.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Ou_CutVideo/Ou_CutVideo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Ou_CutVideo/Ou_CutVideo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Ou_CutVideo/Ou_CutVideo.modulemap";
+				PRODUCT_MODULE_NAME = Ou_CutVideo;
+				PRODUCT_NAME = Ou_CutVideo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		CB70792E370D9CD4E8A0BFD1B2E3BFED /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1006,20 +867,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B856CE40A64E44AF4F9265AB86702DE2 /* Build configuration list for PBXNativeTarget "Ou_CutVideo-Ou_CutVideo" */ = {
+		9B1BDC7BB36CD0A593BD462D4C43F7F7 /* Build configuration list for PBXNativeTarget "Ou_CutVideo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				427025E5466D9286D8D26755FEF3E394 /* Debug */,
-				79EF7C84959B11431E8EBF7B4B64D6E6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CCC7EB191760F2CDAC50C9E0C5AB6F2C /* Build configuration list for PBXNativeTarget "Ou_CutVideo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5D01D7D10EEECE576DB244F052B6CA5D /* Debug */,
-				4F0C8B29EDD363AA575ACB2C2A6C5999 /* Release */,
+				30FB3BAC1809F97FB82D5CABA0AD239B /* Debug */,
+				B2A89B70AA432DD2561D011EF64D1F67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
