@@ -28,8 +28,9 @@ typedef void(^VideoBlock)(NSURL *newVideoUrl, UIImage *newImg, CGFloat newTotalT
 @property (nonatomic, assign) CGFloat minTime;
 
 @property (nonatomic, assign) CGFloat compress_min_size;//视频最小size
-
-@property (nonatomic, assign) BOOL open_aliyun_mod;//是否启用阿里云压缩
+@property (nonatomic, assign) BOOL is_open_compress; //是否要压缩
+@property (nonatomic, assign) CGFloat compress_rate;    //视频压缩比例
+@property (nonatomic, assign) CGFloat max_code_rate;    //视频压缩最大码率
 
 @end
 

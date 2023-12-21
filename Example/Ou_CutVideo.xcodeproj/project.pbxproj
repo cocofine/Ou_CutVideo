@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		74751BBB2B33DB6A0005A195 /* IMG_1667.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 74751BBA2B33DB6A0005A195 /* IMG_1667.MOV */; };
 		74B1B0ED23C9C47300E2EA62 /* 53e7565f3d8f43ff90caefee493c399d-25e594092d7b29a285dd6b1dc396d875-sd.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 74B1B0EC23C9C47300E2EA62 /* 53e7565f3d8f43ff90caefee493c399d-25e594092d7b29a285dd6b1dc396d875-sd.mp4 */; };
 		74B1B10023C9D5F000E2EA62 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
@@ -61,6 +62,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		74751BBA2B33DB6A0005A195 /* IMG_1667.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IMG_1667.MOV; sourceTree = "<group>"; };
 		74B1B0EC23C9C47300E2EA62 /* 53e7565f3d8f43ff90caefee493c399d-25e594092d7b29a285dd6b1dc396d875-sd.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "53e7565f3d8f43ff90caefee493c399d-25e594092d7b29a285dd6b1dc396d875-sd.mp4"; sourceTree = "<group>"; };
 		74B1B10D23CC4AF100E2EA62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74FFCE2238B773796DD611FC /* Ou_CutVideo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Ou_CutVideo.podspec; path = ../Ou_CutVideo.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -149,6 +151,7 @@
 		6003F593195388D20070C39A /* Example for Ou_CutVideo */ = {
 			isa = PBXGroup;
 			children = (
+				74751BBA2B33DB6A0005A195 /* IMG_1667.MOV */,
 				74B1B0EC23C9C47300E2EA62 /* 53e7565f3d8f43ff90caefee493c399d-25e594092d7b29a285dd6b1dc396d875-sd.mp4 */,
 				6003F59C195388D20070C39A /* OUAppDelegate.h */,
 				6003F59D195388D20070C39A /* OUAppDelegate.m */,
@@ -262,9 +265,6 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "1096438749@qq.com";
 				TargetAttributes = {
-					6003F589195388D20070C39A = {
-						DevelopmentTeam = WKR87TTKML;
-					};
 					6003F5AD195388D20070C39A = {
 						DevelopmentTeam = WKR87TTKML;
 						TestTargetID = 6003F589195388D20070C39A;
@@ -298,6 +298,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				74B1B0ED23C9C47300E2EA62 /* 53e7565f3d8f43ff90caefee493c399d-25e594092d7b29a285dd6b1dc396d875-sd.mp4 in Resources */,
+				74751BBB2B33DB6A0005A195 /* IMG_1667.MOV in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -513,7 +514,7 @@
 			baseConfigurationReference = 7908DB83418F1CA1FCB98613 /* Pods-Ou_CutVideo_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WKR87TTKML;
+				DEVELOPMENT_TEAM = A44DKRMR86;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ou_CutVideo/Ou_CutVideo-Prefix.pch";
 				INFOPLIST_FILE = "Ou_CutVideo/Ou_CutVideo-Info.plist";
@@ -530,7 +531,7 @@
 			baseConfigurationReference = 8EEA699FDC7D87313B6F5203 /* Pods-Ou_CutVideo_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WKR87TTKML;
+				DEVELOPMENT_TEAM = A44DKRMR86;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ou_CutVideo/Ou_CutVideo-Prefix.pch";
 				INFOPLIST_FILE = "Ou_CutVideo/Ou_CutVideo-Info.plist";

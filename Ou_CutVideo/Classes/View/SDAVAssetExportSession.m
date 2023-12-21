@@ -305,53 +305,63 @@
         trackFrameRate = 30;
     }
 
-	videoComposition.frameDuration = CMTimeMake(1, trackFrameRate);
-	CGSize targetSize = CGSizeMake([self.videoSettings[AVVideoWidthKey] floatValue], [self.videoSettings[AVVideoHeightKey] floatValue]);
-	CGSize naturalSize = [videoTrack naturalSize];
-	CGAffineTransform transform = videoTrack.preferredTransform;
-	// Workaround radar 31928389, see https://github.com/rs/SDAVAssetExportSession/pull/70 for more info
-	if (transform.ty == -560) {
-		transform.ty = 0;
-	}
+    videoComposition.frameDuration = CMTimeMake(1, trackFrameRate);
+    CGSize targetSize = CGSizeMake([self.videoSettings[AVVideoWidthKey] floatValue], [self.videoSettings[AVVideoHeightKey] floatValue]);
+    CGSize naturalSize = [videoTrack naturalSize];
+    CGAffineTransform transform = videoTrack.preferredTransform;
+    // Workaround radar 31928389, see https://github.com/rs/SDAVAssetExportSession/pull/70 for more info
+    
+    // Fix for mp4 video black screen with audio, see https://github.com/rs/SDAVAssetExportSession/issues/79 for more info
+    CGRect rect = {{0, 0}, naturalSize};
+    CGRect transformedRect = CGRectApplyAffineTransform(rect, transform);
+    // transformedRect should have origin at 0 if correct; otherwise add offset to correct it
+    transform.tx -= transformedRect.origin.x;
+    transform.ty -= transformedRect.origin.y;
 
-	if (transform.tx == -560) {
-		transform.tx = 0;
-	}
+    // Workaround radar 31928389, see https://github.com/rs/SDAVAssetExportSession/pull/70 for more info
+    
+    if (transform.ty == -560) {
+        transform.ty = 0;
+    }
 
-	CGFloat videoAngleInDegree  = atan2(transform.b, transform.a) * 180 / M_PI;
-	if (videoAngleInDegree == 90 || videoAngleInDegree == -90) {
-		CGFloat width = naturalSize.width;
-		naturalSize.width = naturalSize.height;
-		naturalSize.height = width;
-	}
-	videoComposition.renderSize = naturalSize;
-	// center inside
-	{
-		float ratio;
-		float xratio = targetSize.width / naturalSize.width;
-		float yratio = targetSize.height / naturalSize.height;
-		ratio = MIN(xratio, yratio);
+    if (transform.tx == -560) {
+        transform.tx = 0;
+    }
 
-		float postWidth = naturalSize.width * ratio;
-		float postHeight = naturalSize.height * ratio;
-		float transx = (targetSize.width - postWidth) / 2;
-		float transy = (targetSize.height - postHeight) / 2;
+    CGFloat videoAngleInDegree  = atan2(transform.b, transform.a) * 180 / M_PI;
+    if (videoAngleInDegree == 90 || videoAngleInDegree == -90) {
+        CGFloat width = naturalSize.width;
+        naturalSize.width = naturalSize.height;
+        naturalSize.height = width;
+    }
+    videoComposition.renderSize = naturalSize;
+    // center inside
+    {
+        float ratio;
+        float xratio = targetSize.width / naturalSize.width;
+        float yratio = targetSize.height / naturalSize.height;
+        ratio = MIN(xratio, yratio);
 
-		CGAffineTransform matrix = CGAffineTransformMakeTranslation(transx / xratio, transy / yratio);
-		matrix = CGAffineTransformScale(matrix, ratio / xratio, ratio / yratio);
-		transform = CGAffineTransformConcat(transform, matrix);
-	}
+        float postWidth = naturalSize.width * ratio;
+        float postHeight = naturalSize.height * ratio;
+        float transx = (targetSize.width - postWidth) / 2;
+        float transy = (targetSize.height - postHeight) / 2;
 
-	// Make a "pass through video track" video composition.
-	AVMutableVideoCompositionInstruction *passThroughInstruction = [AVMutableVideoCompositionInstruction videoCompositionInstruction];
-	passThroughInstruction.timeRange = CMTimeRangeMake(kCMTimeZero, self.asset.duration);
+        CGAffineTransform matrix = CGAffineTransformMakeTranslation(transx / xratio, transy / yratio);
+        matrix = CGAffineTransformScale(matrix, ratio / xratio, ratio / yratio);
+        transform = CGAffineTransformConcat(transform, matrix);
+    }
 
-	AVMutableVideoCompositionLayerInstruction *passThroughLayer = [AVMutableVideoCompositionLayerInstruction videoCompositionLayerInstructionWithAssetTrack:videoTrack];
+    // Make a "pass through video track" video composition.
+    AVMutableVideoCompositionInstruction *passThroughInstruction = [AVMutableVideoCompositionInstruction videoCompositionInstruction];
+    passThroughInstruction.timeRange = CMTimeRangeMake(kCMTimeZero, self.asset.duration);
+
+    AVMutableVideoCompositionLayerInstruction *passThroughLayer = [AVMutableVideoCompositionLayerInstruction videoCompositionLayerInstructionWithAssetTrack:videoTrack];
 
     [passThroughLayer setTransform:transform atTime:kCMTimeZero];
 
-	passThroughInstruction.layerInstructions = @[passThroughLayer];
-	videoComposition.instructions = @[passThroughInstruction];
+    passThroughInstruction.layerInstructions = @[passThroughLayer];
+    videoComposition.instructions = @[passThroughInstruction];
 
     return videoComposition;
 }

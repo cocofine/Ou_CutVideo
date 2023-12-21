@@ -16,6 +16,15 @@
 
 //#define kMaxTime    [Util shareUtil].commonSet.videoExtendInfo.video_max_time
 
+typedef NS_ENUM(NSUInteger, ResolutionType) {
+    ResolutionType540P,
+    ResolutionType720P,
+    ResolutionType1080P,
+    ResolutionTypeGreater,
+//    ResolutionType2K,
+//    ResolutionType4K,
+};
+
 @interface CutVideoViewController ()
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *viewBottom;
@@ -40,6 +49,11 @@
 typedef void(^VideoCompressBlock)(AVAssetExportSessionStatus status);
 @property (nonatomic, copy) VideoCompressBlock videoCompressBlock;
 
+@property (nonatomic, assign) CGFloat originSize;
+
+@property (nonatomic, strong) NSString *originPath;
+@property (nonatomic, assign) ResolutionType resolutionType;
+
 @end
 
 @implementation CutVideoViewController
@@ -61,7 +75,6 @@ typedef void(^VideoCompressBlock)(AVAssetExportSessionStatus status);
     [super viewDidLoad];
 
     self.viewBottom.constant = kTabBarBottom;
-    self.navigationController.navigationBarHidden = YES;
     self.backTop.constant = kStatusBarHeight + 12;
     
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -106,6 +119,12 @@ typedef void(^VideoCompressBlock)(AVAssetExportSessionStatus status);
         
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
+}
+
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
@@ -143,16 +162,16 @@ typedef void(^VideoCompressBlock)(AVAssetExportSessionStatus status);
         {
             NSString *exportPath = [NSTemporaryDirectory() stringByAppendingPathComponent:strPath];
             NSURL *url = [NSURL fileURLWithPath:exportPath];
-            
+            self.originPath = exportPath;
             CGFloat m = [weakSelf fileSizeAtPath:exportPath];
             NSLog(@"video 容量 %f", m/1024/1024);
-
+            self.originSize = m;
             [weakSelf compressVideoWithUrl:url];
             
-            if ([[NSFileManager defaultManager] fileExistsAtPath:exportPath])
-            {
-                [[NSFileManager defaultManager] removeItemAtPath:exportPath error:nil];
-            }
+//            if ([[NSFileManager defaultManager] fileExistsAtPath:exportPath])
+//            {
+//                [[NSFileManager defaultManager] removeItemAtPath:exportPath error:nil];
+//            }
         }
         else
         {
@@ -193,12 +212,20 @@ typedef void(^VideoCompressBlock)(AVAssetExportSessionStatus status);
     __weak typeof(self) weakSelf = self;
     [self compressVideo:url withOutputUrl:newUrl completed:^(AVAssetExportSessionStatus status) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            [NSObject ou_hideAllLoading];
             
             if (status == AVAssetExportSessionStatusCompleted)
             {
                 CGFloat m = [weakSelf fileSizeAtPath:resultPath];
                 NSLog(@"video output 容量 %f", m/1024/1024);
+                
+                [NSObject ou_hideAllLoading];
+                
+                //保存本地
+//                    BOOL compatible = UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(resultPath);
+//                    if (compatible) {
+//                        UISaveVideoAtPathToSavedPhotosAlbum(resultPath,self,@selector(savedVideoPhotoImage:didFinishSavingWithError:contextInfo:),nil);
+//                    }
+
 
                 UIImage *img = [TJMediaManager getCoverImage:newUrl atTime:0 isKeyImage:NO maximumSize:CGSizeMake(1080, 1080)];
                 
@@ -209,7 +236,10 @@ typedef void(^VideoCompressBlock)(AVAssetExportSessionStatus status);
                 
                 [weakSelf dismissViewControllerAnimated:YES completion:nil];
 
-                
+                if ([[NSFileManager defaultManager] fileExistsAtPath:self.originPath])
+                {
+                    [[NSFileManager defaultManager] removeItemAtPath:self.originPath error:nil];
+                }
             }
             else
             {
@@ -237,144 +267,147 @@ outUrl:输出视频地址
 - (void)compressVideo:(NSURL *)videoUrl withOutputUrl:(NSURL *)outUrl completed:(void(^)(AVAssetExportSessionStatus status))exportBlock
 {
     NSData * oriData = [NSData dataWithContentsOfURL:videoUrl];
-    if (oriData.length/1024/1024<=self.compress_min_size)
+
+    AVURLAsset *avAsset = [AVURLAsset URLAssetWithURL:videoUrl options:nil];
+    //获取视频尺寸
+    NSArray *tracks = [avAsset tracksWithMediaType:AVMediaTypeVideo];
+    AVAssetTrack *videoTrack = tracks[0];
+    CGSize size = CGSizeApplyAffineTransform(videoTrack.naturalSize, videoTrack.preferredTransform);
+    size = CGSizeMake(fabs(size.width), fabs(size.height));
+    NSLog(@"video size %@", NSStringFromCGSize(size));
+    
+    AVURLAsset *asset = [AVURLAsset assetWithURL:videoUrl];
+    AVAssetTrack *assetVideoTrack = [[asset tracksWithMediaType:AVMediaTypeVideo]firstObject];
+    NSLog(@"帧率：%f，比特率：%f", assetVideoTrack.nominalFrameRate,assetVideoTrack.estimatedDataRate);
+    
+    CGFloat maxW = size.width;
+    CGFloat maxH = size.height;
+    if (fabs(size.width) > fabs(size.height)) {
+        if (fabs(size.height) > 1080) {
+            maxH = 1080;
+            maxW = fabs(size.width) / fabs(size.height) * maxH;
+        }
+    } else {
+        if (fabs(size.width) > 1080) {
+            maxW = 1080;
+            maxH = fabs(size.height) / fabs(size.width) * maxW;
+        }
+    }
+    
+    //    4000000 max_code_rate
+    CGFloat bitRate = self.max_code_rate > 0 ? (self.max_code_rate * 1000) : 4000000;
+    if (assetVideoTrack.estimatedDataRate < bitRate) {
+        bitRate = assetVideoTrack.estimatedDataRate;
+    }
+    
+    SDAVAssetExportSession *encoder = [[SDAVAssetExportSession alloc] initWithAsset:avAsset];
+    encoder.outputFileType = AVFileTypeMPEG4;
+    encoder.outputURL = outUrl;
+    encoder.videoSettings = @
     {
-        
-        AVURLAsset *avAsset = [AVURLAsset URLAssetWithURL:videoUrl options:nil];
-        NSArray *compatiblePresets = [AVAssetExportSession exportPresetsCompatibleWithAsset:avAsset];
-        
-        if ([compatiblePresets containsObject:AVAssetExportPresetHighestQuality])
+    AVVideoCodecKey: AVVideoCodecH264,
+    AVVideoWidthKey: @(maxW),//输出视频宽度
+    AVVideoHeightKey: @(maxH),//输出视频高度
+    AVVideoScalingModeKey: AVVideoScalingModeResizeAspect,
+    AVVideoCompressionPropertiesKey: @
         {
-            AVAssetExportSession *exportSession = [[AVAssetExportSession alloc]initWithAsset:avAsset presetName:AVAssetExportPresetHighestQuality];
-            exportSession.outputURL = outUrl;
-            NSLog(@"exportPath :%@", outUrl.absoluteString);
-            exportSession.outputFileType = AVFileTypeMPEG4;
-            [exportSession exportAsynchronouslyWithCompletionHandler:^{
-                
-                exportBlock([exportSession status]);
-                
-                switch ([exportSession status])
-                {
-                    case AVAssetExportSessionStatusFailed:
-                        NSLog(@"Export failed: %@", [[exportSession error] localizedDescription]);
-                        break;
-                    case AVAssetExportSessionStatusCancelled:
-                        NSLog(@"Export canceled");
-                        break;
-                    case AVAssetExportSessionStatusCompleted:
-                        NSLog(@"转换成功%@",outUrl.absoluteString);
-                        
-                        
-                        break;
-                    default:
-                        break;
-                }
-                
-                
-            }];
-        }
-        
-        
-    }else
+        AVVideoAverageBitRateKey: @(bitRate),//视频尺寸*比率
+        AVVideoProfileLevelKey: AVVideoProfileLevelH264High40,
+        },
+    };
+    encoder.audioSettings = @
     {
-        AVURLAsset *avAsset = [AVURLAsset URLAssetWithURL:videoUrl options:nil];
-        //获取视频尺寸
-        NSArray *tracks = [avAsset tracksWithMediaType:AVMediaTypeVideo];
-        AVAssetTrack *videoTrack = tracks[0];
-        CGSize size = CGSizeApplyAffineTransform(videoTrack.naturalSize, videoTrack.preferredTransform);
-        size = CGSizeMake(fabs(size.width), fabs(size.height));
-        CGFloat maxWidth = 960;
-        CGFloat maxHeight = 540;
-        
-        
-        if ([self caculateScaleLeftNum:size.width*9 Right:size.height*16])  //16:9
-        {
-            maxWidth = 960;
-            maxHeight = 540;
-        }
-        else if ([self caculateScaleLeftNum:size.width*16 Right:size.height*9]) //9:16
-        {
-            maxWidth = 540;
-            maxHeight = 960;
-        }
-        else if ([self caculateScaleLeftNum:size.width*3 Right:size.height*4])  //4:3
-        {
-            maxWidth = 640;
-            maxHeight = 480;
-        }
-        else if ([self caculateScaleLeftNum:size.width*4 Right:size.height*3])  //3:4
-        {
-            maxWidth = 480;
-            maxHeight = 640;
-        }
-        else if(size.width/size.height<1)
-        {
-            maxWidth = MIN(size.width, 750);
-            maxHeight = (maxWidth*size.height)/(size.width);
-        }else
-        {
-            maxHeight = MIN(750, size.height);
-            maxWidth = (maxHeight*size.width)/(size.height);
-        }
-        NSInteger numPixels = maxWidth * maxHeight;
-        //每像素比特
-        CGFloat bitsPerPixel = 6.0;//值越小，压缩越厉害，也越不清晰
-        NSInteger bitsPerSecond = numPixels * bitsPerPixel;
-        
-        SDAVAssetExportSession *encoder = [[SDAVAssetExportSession alloc] initWithAsset:avAsset];
-        encoder.outputFileType = AVFileTypeMPEG4;
-        encoder.outputURL = outUrl;
-        encoder.videoSettings = @
-        {
-        AVVideoCodecKey: AVVideoCodecH264,
-        AVVideoWidthKey: @(maxWidth),//输出视频宽度
-        AVVideoHeightKey: @(maxHeight),//输出视频高度
-        AVVideoCompressionPropertiesKey: @
-            {
-            AVVideoAverageBitRateKey: @(bitsPerSecond),//视频尺寸*比率
-            AVVideoProfileLevelKey: AVVideoProfileLevelH264High40,
-            },
-        };
-        encoder.audioSettings = @
-        {
-        AVFormatIDKey: @(kAudioFormatMPEG4AAC),
-        AVNumberOfChannelsKey: @(2),//通道数
-        AVSampleRateKey: @(44100),//采样率 一般用44100
-        AVEncoderBitRateKey: @(128000),//比特采样率 一般是128000
-            //    AVLinearPCMBitDepthKey,  // 比特率 一般设16 32
-            //    AVEncoderAudioQualityKey, // 质量
-        };
-        
-        [encoder exportAsynchronouslyWithCompletionHandler:^
+    AVFormatIDKey: @(kAudioFormatMPEG4AAC),
+    AVNumberOfChannelsKey: @(2),//通道数
+    AVSampleRateKey: @(44100),//采样率 一般用44100
+    AVEncoderBitRateKey: @(128000),//比特采样率 一般是128000
+        //    AVLinearPCMBitDepthKey,  // 比特率 一般设16 32
+        //    AVEncoderAudioQualityKey, // 质量
+    };
+    
+    [encoder exportAsynchronouslyWithCompletionHandler:^
+     {
+         if (encoder.status == AVAssetExportSessionStatusCompleted)
          {
              exportBlock(encoder.status);
-             if (encoder.status == AVAssetExportSessionStatusCompleted)
-             {
-                 NSLog(@"Video export succeeded");
-             }
-             else if (encoder.status == AVAssetExportSessionStatusCancelled)
-             {
-                 NSLog(@"Video export cancelled");
-             }
-             else
-             {
-                 NSLog(@"Video export failed with error: %@ (%ld)", encoder.error.localizedDescription, (long)encoder.error.code);
-             }
-         }];
-    }
+             NSLog(@"Video export succeeded");
+         }
+         else if (encoder.status == AVAssetExportSessionStatusCancelled)
+         {
+             exportBlock(encoder.status);
+             NSLog(@"Video export cancelled");
+         }
+         else
+         {
+             [self compressVideoSystemMethod:videoUrl withOutputUrl:outUrl completed:^(AVAssetExportSessionStatus status) {
+                 exportBlock(status);
+             }];
+             NSLog(@"Video export failed with error: %@ (%ld)", encoder.error.localizedDescription, (long)encoder.error.code);
+         }
+     }];
+
     
 }
 
-
--(BOOL)caculateScaleLeftNum:(double)leftnum Right:(double)rightnum
+- (void)compressVideoSystemMethod:(NSURL *)videoUrl withOutputUrl:(NSURL *)outUrl completed:(void(^)(AVAssetExportSessionStatus status))exportBlock
 {
-    if ((leftnum + 16) > rightnum && (leftnum - 16) < rightnum ) {
-        return YES;
+    AVURLAsset *avAsset = [AVURLAsset URLAssetWithURL:videoUrl options:nil];
+    NSArray *compatiblePresets = [AVAssetExportSession exportPresetsCompatibleWithAsset:avAsset];
+
+    if ([compatiblePresets containsObject:AVAssetExportPresetHighestQuality])
+    {
+        AVAssetExportSession *exportSession = [[AVAssetExportSession alloc]initWithAsset:avAsset presetName:AVAssetExportPresetHighestQuality];
+        exportSession.outputURL = outUrl;
+        NSLog(@"exportPath :%@", outUrl.absoluteString);
+        exportSession.outputFileType = AVFileTypeMPEG4;
+        [exportSession exportAsynchronouslyWithCompletionHandler:^{
+
+            exportBlock([exportSession status]);
+
+            switch ([exportSession status])
+            {
+                case AVAssetExportSessionStatusFailed:
+                    NSLog(@"Export failed: %@", [[exportSession error] localizedDescription]);
+                    break;
+                case AVAssetExportSessionStatusCancelled:
+                    NSLog(@"Export canceled");
+                    break;
+                case AVAssetExportSessionStatusCompleted:
+                    NSLog(@"转换成功%@",outUrl.absoluteString);
+
+
+                    break;
+                default:
+                    break;
+            }
+
+
+        }];
     }
-    return NO;
 }
 
+- (ResolutionType)resolutionWithWidth:(CGFloat)width {
+    
+    if (fabs(width - 540) < fabs(width - 720)) {
+        return ResolutionType540P;
+    } else if (fabs(width - 720) < fabs(width - 1080)) {
+        return ResolutionType720P;
+    } else if (fabs(width - 1080) < fabs(width - 1440)) {
+        return ResolutionType1080P;
+    } else {
+        return ResolutionTypeGreater;
+    }
+}
 
+- (CGFloat)caculateCompressRat
+{
+    CGFloat rate = self.compress_rate;
+    CGFloat m = self.originSize/1024/1024;
+    while (m * rate > 100) {
+        rate = rate * 0.9;
+    }
+    return rate;
+}
 
 - (long long)fileSizeAtPath:(NSString*)filePath
 {

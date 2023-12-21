@@ -23,7 +23,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"53e7565f3d8f43ff90caefee493c399d-25e594092d7b29a285dd6b1dc396d875-sd" ofType:@"mp4"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"IMG_1667" ofType:@"MOV"];
     NSURL  *movieURL = [NSURL fileURLWithPath:path];
     
     CutVideoViewController *vc = [[CutVideoViewController alloc] init];
